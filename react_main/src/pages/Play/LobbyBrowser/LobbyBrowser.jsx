@@ -82,7 +82,7 @@ export default function LobbyBrowser() {
       navigate(location.pathname + `?lobby=${lobbyName}`, { replace: true });
     }
 
-    document.title = `🔪 Ultimafia Lobby`;
+    document.title = `Academic GOAT Lobby`;
     getGameList(listType, 1);
   }, [location.pathname, lobbyName]);
 

@@ -156,7 +156,7 @@ export function Timer(props) {
 
   const isFilled = numPlayers === game.setup?.total;
   const filledEmoji = isFilled ? " 🔔🔔" : "";
-  const fillingTitle = `🔪 ${numPlayers}/${game.setup?.total}${filledEmoji} Ultimafia`;
+  const fillingTitle = `🔪 ${numPlayers}/${game.setup?.total}${filledEmoji} Academic GOAT`;
   const ChangeHeadFilling = <ChangeHead title={fillingTitle} />;
 
   const currentState = game.history?.states[game.history?.currentState]?.name;
@@ -171,7 +171,7 @@ export function Timer(props) {
   if (!game.review) {
     if (isFinished) {
       if (winners) HeadChanges = <ChangeHead title={winners} />;
-      else HeadChanges = <ChangeHead title=" Ultimafia" />;
+      else HeadChanges = <ChangeHead title=" Academic GOAT" />;
     } else if (started) HeadChanges = ChangeHeadInProgress;
     else HeadChanges = ChangeHeadFilling;
   }

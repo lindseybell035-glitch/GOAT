@@ -3431,14 +3431,14 @@ export function PlayerRows({ players, className = "", renderMarker, renderRowEnd
     const isReady = readyCheck && readyCheckInfo.readyPlayers[player.id];
 
     return (
-      <div 
-        className={`player ${className ? className : ""}`} 
+      <div
+        className={`player ${className ? className : ""}`}
         key={player.id}
         style={readyCheck ? {
           boxShadow: isReady ? "inset 4px 0 0 #4caf50" : "inset 4px 0 0 #e02626",
           backgroundColor: isReady ? "#4caf500c" : "#e026260c",
           transition: "background-color 0.2s, box-shadow 0.2s",
-          display: "flex", 
+          display: "flex",
           alignItems: "center",
           width: "100%",
           paddingLeft: "10px",
@@ -5470,7 +5470,7 @@ function FirstGameModal(props) {
   const showModal = props.showModal;
   const setShowModal = props.setShowModal;
 
-  const modalHeader = "Welcome to UltiMafia!";
+  const modalHeader = "Welcome to Academic GOAT!";
 
   const modalContent = (
     <>
@@ -5494,17 +5494,7 @@ function FirstGameModal(props) {
           </a>
           .
         </div>
-        <div>
-          - Embedded{" "}
-          <a
-            href="https://discord.gg/C5WMFpYRHQ"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-          >
-            here
-          </a>{" "}
-          is a link to the site's Discord server.
-        </div>
+
         <div>
           - Want to learn how to be a better player? Sign up to be a mentee{" "}
           <a
@@ -5530,22 +5520,11 @@ function FirstGameModal(props) {
           </a>
           .
         </div>
-        <div>
-          - Want to help us keep the lights on? You can support us on{" "}
-          <a
-            href="https://ko-fi.com/ultimafia"
-            target="_blank"
-            rel="noopener noreferrer nofollow"
-          >
-            Ko-fi
-          </a>
-          .
-        </div>
+
       </div>
 
       <div className="paragraph">
-        Thanks for playing on the Ultimate Mafia Gaming Experience! Go hogwild,
-        my friend 🐗
+        Thanks for trying Academic GOAT!
       </div>
     </>
   );

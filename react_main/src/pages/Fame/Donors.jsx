@@ -336,19 +336,7 @@ export default function Donors(props) {
           UltiMafia and are not listed here, please contact an admin
           immediately!
         </Typography>
-        <Typography variant="body1" paragraph>
-          This website is not for profit and is hosted primarily through
-          donations from users. If you are able to, please consider donating on
-          our{" "}
-          <Link
-            href="https://ko-fi.com/ultimafia"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Ko-Fi
-          </Link>{" "}
-          in exchange for a special Donor profile badge and a spot on this page.
-        </Typography>
+        <Typography variant="body1" paragraph>Academic GOAT development does not currently accept donations.</Typography>
       </Box>
       <Grid2 container spacing={1}>
         {donorCards}

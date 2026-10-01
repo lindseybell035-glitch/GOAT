@@ -551,30 +551,14 @@ function Footer() {
           fontSize: "xx-large",
         }}>
           <MuiLink
-            href="https://github.com/UltiMafia/Ultimafia"
+            href="https://github.com/lindseybell035-glitch/GOAT" aria-label="Academic GOAT source code"
             rel="noopener noreferrer nofollow"
             sx={{ display: "flex", }}
           >
             <i className="fab fa-github" />
           </MuiLink>
-          <MuiLink
-            href="https://ko-fi.com/ultimafia"
-            rel="noopener noreferrer nofollow"
-            sx={{ display: "flex", }}
-          >
-            <Icon icon="simple-icons:kofi" />
-          </MuiLink>
-          <MuiLink
-            href="https://discord.gg/C5WMFpYRHQ"
-            target="blank"
-            rel="noopener noreferrer nofollow"
-            sx={{ display: "flex", }}
-          >
-            <Icon
-              icon="simple-icons:discord"
-              style={{ color: "#5865F2" }}
-            />
-          </MuiLink>
+
+
         </Stack>
         <Typography variant="body2" sx={{ textAlign: "center" }}>
           By accessing this website, you agree to our{" "}
@@ -596,7 +580,7 @@ function Footer() {
         <Stack direction={isPhoneDevice ? "column" : "row"} spacing={isPhoneDevice ? 0.5 : 2} sx={{
         }}>
           <Typography variant="body2">
-            © {year} UltiMafia
+            Academic GOAT · Based on UltiMafia © {year}
           </Typography>
           <MuiLink
             variant="body2"
