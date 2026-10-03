@@ -9,7 +9,8 @@
   "scripts": {
     "start": "docker-compose up; pm2 start pm2.config.js",
     "stop": "pm2 kill; docker-compose down",
-    "test": "NODE_ENV=test mocha --recursive --parallel --exit"
+    "test": "NODE_ENV=test mocha --recursive --parallel --exit",
+    "test:company": "node --test test-company/*.test.js"
   },
   "dependencies": {
     "@octokit/core": "^7.0.3",

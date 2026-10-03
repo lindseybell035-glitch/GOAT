@@ -37,6 +37,7 @@ import {
 
 import { Announcement } from "./components/alerts/Announcement";
 import SiteLogo from "./components/SiteLogo";
+import Study from "./pages/Study/Study";
 import { useIsPhoneDevice } from "./hooks/useIsPhoneDevice";
 import { useSnowstorm } from "./hooks/useSnowstorm";
 import { GuestAuthButtons } from "./components/GuestAuthButtons";
@@ -153,6 +154,8 @@ function Main(props) {
                 <Routes>
                   <Route path="welcome" element={<Welcome />} />
                   <Route path="play/*" element={<Play />} />
+                  <Route path="study" element={<Study />} />
+                  <Route path="study/:roomId" element={<Study />} />
                   <Route path="community/*" element={<Community />} />
                   <Route path="fame/*" element={<Fame />} />
                   <Route path="learn/*" element={<Learn />} />
@@ -257,6 +260,7 @@ function Header({ setShowAnnouncementTemporarily }) {
                 label: "Play",
                 items: [
                   { text: "Play", path: "/play" },
+                  { text: "Study Rooms", path: "/study" },
                   {
                     text: "Host",
                     path: "/play/host",
@@ -355,6 +359,7 @@ function Header({ setShowAnnouncementTemporarily }) {
               label="Play"
               items={[
                 { text: "Play", path: "/play" },
+                { text: "Study Rooms", path: "/study" },
                 { text: "Host", path: "/play/host", hide: !user.loggedIn },
                 {
                   text: "Create Setup",

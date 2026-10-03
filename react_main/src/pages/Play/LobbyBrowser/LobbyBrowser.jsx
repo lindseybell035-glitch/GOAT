@@ -39,6 +39,7 @@ import { CompetitiveRounds } from "./CompetitiveRounds";
 import { getRowStubColor } from "./gameRowColors.js";
 
 import { lobbies } from "../../../constants/lobbies";
+import { StudyLobbyCard } from "../../Study/Study";
 
 export default function LobbyBrowser() {
   const isPhoneDevice = useIsPhoneDevice();
@@ -272,6 +273,7 @@ export default function LobbyBrowser() {
   return (
     <Stack direction="column" spacing={1}>
       {lobbyTabs}
+      <StudyLobbyCard compact />
       <Grid2 container rowSpacing={2} columnSpacing={2}>
         <Grid2 size={{ xs: 12, md: 8 }}>
           <Stack spacing={2}>
